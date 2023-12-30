@@ -1,113 +1,87 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import DELIVERY from "../public/DELIVERY.png";
+import LOGO from "../public/LOGO.png"
+import HEADPHONE from "../public/HEADPHONE.png"
+import TRUCK from "../public/TRUCK.png"
+import DELIVERYILLUSTRATION from "../public/DELIVERYILLUSTRATION.png"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    
+    <div className="w-[1119px] h-[5128px] relative bg-white">
+      <head>
+        <title>Dispatch Hub Webpage</title>
+      
+      </head>
+
+      
+      
+      
+{/*hero start*/}
+      <div className="w-[1119px] h-[628px] bg-black bg-opacity-50">
+      
+        <Image src={DELIVERY} alt='delivery man' object-cover width={1119} height={628} />
+        <Image src={LOGO} alt='logo' width={108} height={70} className='absolute top-0 left-0' />
+        <div className="w-[455px] h-[50px] left-[651px] top-[24px] absolute">
+          <div className="left-0 top-[10px] absolute text-white text-2xl font-normal font-['Inter'] capitalize">nigeria (NG)</div>
+
+        
+          <button className="left-[207px] top-[10px] absolute text-white text-2xl font-normal font-['Inter'] capitalize">Support</button>
+          <button  className="w-[103px] h-[30px] left-[341px] top-[10px] bg-orange-500 rounded-[30px] absolute text-white text-2xl font-semibold font-['Inter'] capitalize">SIGN UP</button>
         </div>
+
+
+        <div className="w-[1015px] h-[95px] left-[52px] top-[219px] absolute text-center text-white text-[40px] font-bold font-['Inter'] capitalize">dispatch wherever you want, and<br/> track in real time
+        </div>
+        <div className="left-[90px] top-[358px] absolute text-center"><span className="text-white text-[26px] font-normal font-['Inter'] capitalize">We manage schedule deliveries for variety of </span>
+        <span className="text-white text-[26px] font-normal font-['Inter']"> user segments, ranging from<br/>business established to individual clients. We ensure quickly delivery service<br/>at great price, and you can track your deliveries at real time</span>
+        </div>
+        
+
+        <button className="w-[182px] h-[57px] left-[469px] top-[507px] absolute bg-orange-500 rounded-[30px] text-white text-2xl font-semibold font-['Inter']" >Get the App</button>
+
+
+
+      
+    
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+{/*hero end*/}
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <Image alt='' className="w-[100px] h-[100px] left-[972px] top-[687px] absolute" src={HEADPHONE} />
+      <button className="w-[460px] h-12 left-[330px] top-[663px] absolute  text-black text-4xl font-semibold font-['Inter'] capitalize">earn with dispatch hub</button>
+      <div className="w-[259px] h-[27px] left-[427px] top-[737px] absolute">
+<div className="left-[7px] top-[4px] absolute bg-white border border-black rounded-[30px] text-black text-base font-semibold font-['Inter'] capitalize">Dispatch</div>
+<button className="left-[139px] top-[4px] absolute bg-orange-500 rounded-[30px] text-white text-base font-semibold font-['Inter'] capitalize">Vehicle Owner</button>
+</div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+<div className="w-[484px] h-[463px] top-[827px] left-[19px] absolute p-2.5 flex-col justify-start items-start gap-7 inline-flex">
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    <div className="w-[643px] h-[45px] text-black text-4xl font-bold font-['Inter'] leading-[45px]">Own a vehicle?</div>
+    <div className="w-[631px] h-[92px] text-black text-[32px] font-light font-['Inter'] leading-9">Become a partner with us by <br/>registering your vehicle with us <br/>today</div>
+    <div className="w-[182px] h-[75px] p-3 bg-stone-50 rounded-[30px] justify-center items-center gap-2.5 inline-flex">
+        <button className="text-black text-2xl font-semibold font-['Inter'] leading-loose">Learn more</button>
+    </div>
+</div>
+
+<Image className="w-[588px] h-[475px] absolute right-[19px] top-[815px] rounded-[20px]" src={TRUCK} alt='truck' />
+
+{/*services start*/}
+
+<div className="left-[427px] top-[1388px] absolute text-black text-[32px] font-bold font-['Inter'] capitalize">our services</div>
+<div className="w-[475px] h-44 left-[46px] top-[1511px] absolute">
+<div className="w-[475px] h-44 left-0 top-0 absolute bg-white" />
+<Image className="w-[190px] h-[156px] left-0 top-0 absolute" src={DELIVERYILLUSTRATION} alt='delivery illustration' />
+<div className="w-[269px] h-[148px] left-[197px] top-[8px] absolute"><span className="text-black text-xl font-bold font-['Inter'] capitalize">local delivery<br/></span><span className="text-black text-sm font-normal font-['Inter'] capitalize"><br/>need to send a package across town?<br/>our local delivery service ensures swift<br/>and secure transportation within your<br/>city or town. Whether it’s a last minute<br/>document, a special gift, or everyday<br/>essentials, we’ve got you covered.<br/></span></div>
+</div>
+
+{/*services end*/}
+
+
+
+
+
+    </div>
   )
 }
